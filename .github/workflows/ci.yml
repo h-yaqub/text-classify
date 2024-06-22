@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: Run Tests
         run: |
-          echo "Add Tests ASAP...."
+          python -m unittest -v2
 
   pre-commit:
     runs-on: ubuntu-latest
