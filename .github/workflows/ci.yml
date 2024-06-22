@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       - name: Setup Python 3.12
@@ -19,6 +18,13 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements-dev.txt
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Tests
+        run: |
+          echo "Add Tests ASAP...."
 
   pre-commit:
     runs-on: ubuntu-latest
