@@ -1,0 +1,10 @@
+*.swp
+venv
+__pycache__
+.env
+.idea/
+.DS_Store
+Pipfile
+Pipfile.lock
+__MACOSX/
+data/
