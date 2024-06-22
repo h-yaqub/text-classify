@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    command: "python core/main.py"
+    env_file:
+      - ./.env
+    container_name: app
+    volumes:
+      - .:/opt/code
